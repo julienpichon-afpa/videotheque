@@ -141,3 +141,7 @@ Formulaire de connexion :
 ## Modèle Logique des Données
 
 ![Modele Logique des Données](readme-assets/MLD.png)
+
+## Diagramme des Classes
+
+![Diagramme des classes](readme-assets/UML.png)
