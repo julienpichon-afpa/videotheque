@@ -134,6 +134,12 @@ Formulaire de connexion :
 - email
 - password
 
+## Charte Graphique
+
+### Palette de Couleur
+
+![palette de couleur](readme-assets/Palette de couleurs.png)
+
 ## Modèle Conceptuel des Données
 
 ![Modele Conceptuel de données](readme-assets/MCD.png)
