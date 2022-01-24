@@ -82,3 +82,62 @@ On ouvre alors une pull request de cette branche vers le dépôt officiel :
 Bien penser à régulièrement synchroniser sa version personnelle du projet avec la version officielle :
 
 ![synchro](readme-assets/synchro.PNG)
+
+## VIPR VIdéo Pull Request
+
+Site collaboratif de mise en commun d'informations sur le cinéma, **pour les mordus de code et de cinéma !**
+
+## Cahier des Charges
+
+### Page d'Accueil
+
+Contient :
+
+- Les cartes films
+    - Affiche
+    - Titre
+    - Date de sortie
+    - Element cliquable pour accéder aux détails du film
+- Une pagination
+- Une barre de navigation
+    - Menu dépliant
+    - Bouton de connexion
+    - Un filtre de film par genre
+    - Une barre de recherche
+    
+### Page Détail
+
+- Tous les détails sur le film
+- Bouton vers la page modification / suppression (envoi sur connexion si utilisateur non connecté)
+- Bouton pour télécharger le film (envoi sur connexion si utilisateur non connecté)
+
+### Page Inscription
+
+Faire un formulaire permettant de récupérer les informations des utilisateurs, avec une validation des données saisies. Une fois inscrit, l'utilisateur est connecté.
+
+Champs de formulaire :
+
+- firstname
+- lastname
+- email
+- password
+- confirmation du password
+
+*role* et *id* gérés par le système.
+
+### Page de Connexion
+
+Avec l’email et mot de passe les utilisateurs devraient pouvoir se connecter, ajouter de nouveaux films, modifier les informations de films existants ou en supprimer.
+
+Formulaire de connexion :
+
+- email
+- password
+
+## Modèle Conceptuel des Données
+
+![Modele Conceptuel de données](readme-assets/MCD.png)
+
+## Modèle Logique des Données
+
+![Modele Logique des Données](readme-assets/MLD.png)
