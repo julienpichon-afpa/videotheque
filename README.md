@@ -138,7 +138,7 @@ Formulaire de connexion :
 
 ### Palette de Couleur
 
-![palette de couleur](readme-assets/Palette de couleurs.png)
+![palette de couleur](readme-assets/palette_de_couleur.png)
 
 ## Modèle Conceptuel des Données
 
