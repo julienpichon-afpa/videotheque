@@ -1,4 +1,6 @@
-# Vidéothèque
+![logo](readme-assets/VPR_logo.png)
+# VIPR
+## Pour les mordus de code et de cinéma
 
 ## Contributeurs
 
