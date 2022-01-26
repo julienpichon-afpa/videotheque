@@ -14,10 +14,20 @@ class Genre
 {
     /**
      * @ORM\Id
-     * @ORM\GeneratedValue(strategy="NONE")
+     * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
      */
     private $id;
+
+    /**
+     * @param mixed $id
+     * @return Genre
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+        return $this;
+    }
 
     /**
      * @ORM\Column(type="string", length=255)
