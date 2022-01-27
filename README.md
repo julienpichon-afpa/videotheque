@@ -7,6 +7,9 @@
 - Massinissa
 - Inocent
 - Jérémy
+- Julien
+- Grégory
+- Laurent
 
 ## [Forking Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow)
 
@@ -90,7 +93,7 @@ Bien penser à régulièrement synchroniser sa version personnelle du projet ave
 Site collaboratif de mise en commun d'informations sur le cinéma, **pour les mordus de code et de cinéma !**
 
 ## Cahier des Charges
-
+### Rendu de projet le 02/02/2022
 ### Page d'Accueil
 
 Contient :
