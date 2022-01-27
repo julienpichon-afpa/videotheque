@@ -6,6 +6,7 @@ use ApiPlatform\Core\Annotation\ApiResource;
 use App\Repository\MovieRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
+use Cocur\Slugify\Slugify;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -188,4 +189,9 @@ class Movie
 
         return $this;
     }
+
+    public function getSlug(): string {
+        return (new Slugify())->slugify($this->original_title);
+    }
+
 }

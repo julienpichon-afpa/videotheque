@@ -5,12 +5,12 @@
 {% block body %}
     <div class="container my-5">
         <div class="row">
-            <h4 class="text-uppercase">Films prochainement au cinéma</h4>
+            <h4 class="text-uppercase">Les films à venir</h4>
             {% for movieSoon in moviesSoon %}
                 <div class="col-12 col-md-3">
                     <a href="#" class="card-link text-dark text-decoration-none">
                         <div class="card-text m-1">
-                            <a href="{{ path('detail',{'id':movieSoon.id} )}}"><img src="https://image.tmdb.org/t/p/w500/{{ movieSoon.getPosterPath }}" class="card-img-top img-responsive" alt="{{ movieSoon.title }}"></a>
+                            <a href="{{ path('detail',{'id':movieSoon.id, 'slug': movieSoon.slug} )}}"><img src="https://image.tmdb.org/t/p/w500/{{ movieSoon.getPosterPath }}" class="card-img-top img-responsive" alt="{{ movieSoon.title }}"></a>
                             <div class="card-text pt-2">
                                 <p>{{ movieSoon.title }}</p>
                             </div>
@@ -20,7 +20,7 @@
             {% endfor %}
             <div class="col-12 my-4">
                 <span class="d-flex justify-content-center">
-                    <a href="#" class="btn btn-outline-dark rounded-pill w-25">Voir tous les films</a>
+                    <a href="{{ path('list') }}" class="btn btn-outline-dark rounded-pill w-25">Voir tous les films</a>
                 </span>
             </div>
             <h4 class="text-uppercase">Derniers films ajoutés</h4>
@@ -28,7 +28,7 @@
                 <div class="col-12 col-md-2">
                     <a href="#" class="card-link text-dark text-decoration-none">
                         <div class="card-text m-1">
-                            <a href="{{ path('detail',{'id':movieLast.id} )}}"><img src="https://image.tmdb.org/t/p/w500/{{ movieLast.getPosterPath }}" class="card-img-top img-responsive" alt=""></a>
+                            <a href="{{ path('detail',{'slug': movieLast.slug, 'id':movieLast.id} )}}"><img src="https://image.tmdb.org/t/p/w500/{{ movieLast.getPosterPath }}" class="card-img-top img-responsive" alt=""></a>
                             <div class="card-text pt-2">
                                 <p>{{ movieLast.title }}</p>
                             </div>
