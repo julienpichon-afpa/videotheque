@@ -62,6 +62,7 @@ class MovieFixture extends Fixture
                     ->setOverview($movie["overview"])
                     ->setOriginalTitle($movie["original_title"])
                     ->setOriginalLanguage($movie["original_language"])
+                    ->setTitle($movie["title"])
                     ->setOriginalTitle($movie["original_title"]);
                 foreach ($movie["genre_ids"] as $id_genre){
                     $genreFixture = $this->genreRepository->findOneBySomeId($id_genre);
