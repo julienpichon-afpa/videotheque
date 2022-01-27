@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ListController!{% endblock %}
+
+{% block body %}
+
+<div class="container">
+  <!-- Titre de la page-->
+  <div class="row py-4">
+    <h1>Tous les les films</h1>
+  </div>
+  <!-- rang avec 1 ou 6 colonnes-->
+  <div class="row py-3">
+  {% for movie in movies %}
+    <div class="col-12 col-md-2">
+        <div class="card-text m-1">
+        <img src="https://image.tmdb.org/t/p/w500/{{ movie.getPosterPath }}" class="card-img-top img-responsive" style="width:'' height:''" alt="">
+        <div class="card-text pt-2" style="font-size:0.8rem">
+          <p>{{ movie.title }}</p>
+       </div>
+      </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+{% endblock %}
