@@ -56,6 +56,7 @@ class MovieFixture extends Fixture
                 $date = new \DateTime($movie["release_date"]);
 //                $date = $date->format('Y-m-d');
                 $movieFixture
+                    ->setId($movie["id"])
                     ->setPosterPath($movie["poster_path"])
                     ->setAdult($movie["adult"])
                     ->setReleaseDate($date)

@@ -24,7 +24,8 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link text-uppercase fw-bold" href="{{ path('home') }}">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link text-uppercase fw-bold" href="#">Films</a></li>
+                    <li class="nav-item"><a href="{{ path('list') }}"class="nav-link text-uppercase fw-bold">Films</a></li>
+
                     <li class="nav-item"><a class="nav-link text-uppercase fw-bold" href="#">émissions</a></li>
                     <li class="nav-item"><a class="nav-link text-uppercase fw-bold" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Séries</a></li>
                     <li class="nav-item"><a class="nav-link text-uppercase fw-bold" href="{{ path('app_register') }}">Inscription</a></li>
@@ -39,8 +40,6 @@
     {% block body %}
     {% endblock %}
 </main>
-</body>
-
 <!-- Footer-->
 <div class="bg-dark py-4">
     <div class="container py-4">
@@ -73,6 +72,5 @@ Et notre vidéothèque, c’est aussi une sélection de séries et d’émission
     {% block javascripts %}
     {% endblock %}
 </footer>
-
 </body>
 </html>
