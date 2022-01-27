@@ -16,7 +16,7 @@ class Movie
 {
     /**
      * @ORM\Id
-     * @ORM\GeneratedValue
+     * @ORM\GeneratedValue(strategy="NONE")
      * @ORM\Column(type="integer")
      */
     private $id;
@@ -71,9 +71,15 @@ class Movie
      */
     private $genre;
 
+    /**
+     * @ORM\ManyToMany(targetEntity=Person::class, mappedBy="movie")
+     */
+    private $people;
+
     public function __construct()
     {
         $this->genre = new ArrayCollection();
+        $this->people = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -185,6 +191,33 @@ class Movie
     public function removeGenre(Genre $genre): self
     {
         $this->genre->removeElement($genre);
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Person[]
+     */
+    public function getPeople(): Collection
+    {
+        return $this->people;
+    }
+
+    public function addPerson(Person $person): self
+    {
+        if (!$this->people->contains($person)) {
+            $this->people[] = $person;
+            $person->addMovie($this);
+        }
+
+        return $this;
+    }
+
+    public function removePerson(Person $person): self
+    {
+        if ($this->people->removeElement($person)) {
+            $person->removeMovie($this);
+        }
 
         return $this;
     }

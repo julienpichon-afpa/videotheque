@@ -61,4 +61,14 @@ class MovieRepository extends ServiceEntityRepository
         ;
     }
     */
+
+    public function findOneById(int $id): ?Movie
+    {
+        return $this->createQueryBuilder('g')
+            ->andWhere('g.id = :id')
+            ->setParameter('id', $id)
+            ->getQuery()
+            ->getOneOrNullResult()
+            ;
+    }
 }
