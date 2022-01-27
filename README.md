@@ -1,4 +1,4 @@
-![logo](readme-assets/video-logo-white.png)
+![logo](readme-assets/video-logo-black.png)
 # Video
 ## Pour les mordus de code et de cinéma
 
