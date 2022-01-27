@@ -22,3 +22,4 @@
 ### IDE related file ###
 .idea
 .vscode
+.DS_Store

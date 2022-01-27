@@ -1,4 +1,4 @@
-![logo](readme-assets/VPR_logo.png)
+![logo](readme-assets/video-logo-black.png)
 # VIPR
 ## Pour les mordus de code et de cinéma
 
@@ -136,11 +136,23 @@ Formulaire de connexion :
 - email
 - password
 
-## Charte Graphique
+## Maquettes
 
-### Palette de Couleur
+### Home
 
-![palette de couleur](readme-assets/palette_de_couleur.png)
+![Maquette Home](readme-assets/design-home.jpg)
+
+### List
+
+![Maquette List](readme-assets/design-list.jpg)
+
+### Detail
+
+![Maquette Detail](readme-assets/design-detail.jpg)
+
+### Formulaire 
+
+![Maquette Add](readme-assets/design-add.jpg)
 
 ## Modèle Conceptuel des Données
 
