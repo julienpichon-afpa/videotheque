@@ -7,7 +7,7 @@ use Doctrine\Persistence\ObjectManager;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
-class Genre extends Fixture
+class GenreFixture extends Fixture
 {
     private $client;
 

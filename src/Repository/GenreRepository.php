@@ -20,7 +20,7 @@ class GenreRepository extends ServiceEntityRepository
     }
 
     // /**
-    //  * @return Genre[] Returns an array of Genre objects
+    //  * @return GenreFixture[] Returns an array of GenreFixture objects
     //  */
     /*
     public function findByExampleField($value)
@@ -37,7 +37,7 @@ class GenreRepository extends ServiceEntityRepository
     */
 
     /*
-    public function findOneBySomeField($value): ?Genre
+    public function findOneBySomeField($value): ?GenreFixture
     {
         return $this->createQueryBuilder('g')
             ->andWhere('g.exampleField = :val')
@@ -47,4 +47,13 @@ class GenreRepository extends ServiceEntityRepository
         ;
     }
     */
+    public function findOneBySomeId(int $id): ?Genre
+    {
+        return $this->createQueryBuilder('g')
+            ->andWhere('g.id = :id')
+            ->setParameter('id', $id)
+            ->getQuery()
+            ->getOneOrNullResult()
+            ;
+    }
 }

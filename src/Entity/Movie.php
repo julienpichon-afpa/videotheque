@@ -22,6 +22,16 @@ class Movie
     private $id;
 
     /**
+     * @param mixed $id
+     * @return Movie
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+        return $this;
+    }
+
+    /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $poster_path;
