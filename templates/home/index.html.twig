@@ -1,20 +1,42 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Accueil Video{% endblock %}
+{% block title %}Video le Netflix 2.0{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    <div class="container my-5">
+        <div class="row">
+            <h4 class="text-uppercase">Films prochainement au cinéma</h4>
+            {% for movieSoon in moviesSoon %}
+                <div class="col-12 col-md-3">
+                    <a href="#" class="card-link text-dark text-decoration-none">
+                        <div class="card-text m-1">
+                            <a href="{{ path('detail',{'id':movieSoon.id} )}}"><img src="https://image.tmdb.org/t/p/w500/{{ movieSoon.getPosterPath }}" class="card-img-top img-responsive" alt="{{ movieSoon.title }}"></a>
+                            <div class="card-text pt-2">
+                                <p>{{ movieSoon.title }}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+            <div class="col-12 my-4">
+                <span class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-outline-dark rounded-pill w-25">Voir tous les films</a>
+                </span>
+            </div>
+            <h4 class="text-uppercase">Derniers films ajoutés</h4>
+            {% for movieLast in moviesLast %}
+                <div class="col-12 col-md-2">
+                    <a href="#" class="card-link text-dark text-decoration-none">
+                        <div class="card-text m-1">
+                            <a href="{{ path('detail',{'id':movieLast.id} )}}"><img src="https://image.tmdb.org/t/p/w500/{{ movieLast.getPosterPath }}" class="card-img-top img-responsive" alt=""></a>
+                            <div class="card-text pt-2">
+                                <p>{{ movieLast.title }}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/Users/Anonymous/Desktop/videotheque/src/Controller/HomeController.php'|file_link(0) }}">src/Controller/HomeController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/Users/Anonymous/Desktop/videotheque/templates/home/index.html.twig'|file_link(0) }}">templates/home/index.html.twig</a></code></li>
-    </ul>
-</div>
+        </div>
+    </div>
 {% endblock %}
