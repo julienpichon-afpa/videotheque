@@ -19,18 +19,12 @@ class DetailController extends AbstractController
     }
 
     /**
-     * @Route("/list/{id}/{slug}", name="detail" )
+     * @Route("/list/{id}", name="detail" )
      */
-    public function index(int $id, string $slug): Response
+    public function index(int $id): Response
     {
         $details = $this->Repository->findById($id);
 
-        if($details[0]->getSlug() !== $slug) {
-            return $this->redirectToRoute('detail', [
-                'id' => $details->getId(),
-                'slug' => $details->getSlug()
-            ]);
-        }
 
         return $this->render('detail/index.html.twig', [
             'controller_name' => 'DetailController',
