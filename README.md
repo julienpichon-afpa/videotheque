@@ -1,5 +1,5 @@
-![logo](readme-assets/VPR_logo.png)
-# VIPR
+![logo](readme-assets/video-logo-white.png)
+# Video
 ## Pour les mordus de code et de cinéma
 
 ## Contributeurs
@@ -136,11 +136,27 @@ Formulaire de connexion :
 - email
 - password
 
-## Charte Graphique
+## Maquettes
 
-### Palette de Couleur
+### Prototype
 
-![palette de couleur](readme-assets/palette_de_couleur.png)
+[Accès au prototype](https://www.figma.com/proto/pNkpNP2nSs6GsFK4b306qj/Untitled?page-id=0%3A1&node-id=2%3A2&viewport=241%2C48%2C0.15&scaling=min-zoom&starting-point-node-id=2%3A2)
+
+### Home
+
+![Maquette Home](readme-assets/design-home.jpg)
+
+### Tous les films
+
+![Maquette List](readme-assets/design-list.jpg)
+
+### Détail
+
+![Maquette Detail](readme-assets/design-detail.jpg)
+
+### Formulaire 
+
+![Maquette Add](readme-assets/design-add.jpg)
 
 ## Modèle Conceptuel des Données
 
