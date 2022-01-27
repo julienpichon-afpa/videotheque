@@ -7,19 +7,33 @@
 <div class="container">
   <!-- Titre de la page-->
   <div class="row py-4">
-    <h1>Tous les les films</h1>
+    <h1>Tous les films</h1>
+  </div>
+  <div class="row py-4">
+  <div class="col-12 col-md-4">
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    {{ form_end(form) }}
+    </div>
+    <div class="col-12 col-md-4">
+    </div>
+    <div class="col-12 col-md-4">
+    </div
   </div>
   <!-- rang avec 1 ou 6 colonnes-->
   <div class="row py-3">
-  {% for movie in movies %}
+    {% for movie in movies %}
     <div class="col-12 col-md-2">
+      <a href="{{ path('detail',{'id':movie.id})}}" class="card-link text-dark text-decoration-none">
         <div class="card-text m-1">
-        <img src="https://image.tmdb.org/t/p/w500/{{ movie.getPosterPath }}" class="card-img-top img-responsive" style="width:'' height:''" alt="">
-        <div class="card-text pt-2" style="font-size:0.8rem">
-          <p>{{ movie.title }}</p>
-       </div>
-      </div>
-      </div>
+          <img src="https://image.tmdb.org/t/p/w500/{{ movie.getPosterPath }}" class="card-img-top img-responsive"
+            style="width:'' height:''" alt="">
+          <div class="card-text pt-2" style="font-size:0.8rem">
+            <p>{{ movie.title }}</p>
+          </div>
+        </div>
+      </a>
+    </div>
     {% endfor %}
   </div>
 </div>

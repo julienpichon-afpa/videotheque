@@ -25,6 +25,14 @@ class MovieRepository extends ServiceEntityRepository
         ->execute();
     }
 
+    public function findMoviesByKeyword($keyword){
+        return $this->createQueryBuilder('m')
+        ->andWhere('m.title LIKE :keyword')
+        ->setParameter('keyword', '%'.$keyword.'%')
+        ->getQuery()
+        ->getResult();
+    }
+
     // /**
     //  * @return MovieFixture[] Returns an array of MovieFixture objects
     //  */
