@@ -1,5 +1,5 @@
-![logo](readme-assets/video-logo-black.png)
-# VIPR
+![logo](readme-assets/video-logo-white.png)
+# Video
 ## Pour les mordus de code et de cinéma
 
 ## Contributeurs
@@ -142,11 +142,11 @@ Formulaire de connexion :
 
 ![Maquette Home](readme-assets/design-home.jpg)
 
-### List
+### Tous les films
 
 ![Maquette List](readme-assets/design-list.jpg)
 
-### Detail
+### Détail
 
 ![Maquette Detail](readme-assets/design-detail.jpg)
 
