@@ -138,6 +138,10 @@ Formulaire de connexion :
 
 ## Maquettes
 
+### Prototype
+
+[Accès au prototype](https://www.figma.com/proto/pNkpNP2nSs6GsFK4b306qj/Untitled?page-id=0%3A1&node-id=2%3A2&viewport=241%2C48%2C0.15&scaling=min-zoom&starting-point-node-id=2%3A2)
+
 ### Home
 
 ![Maquette Home](readme-assets/design-home.jpg)
